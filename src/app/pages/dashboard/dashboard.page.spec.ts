@@ -1,16 +1,18 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { IonicModule } from "@ionic/angular";
 
-import { DashboardPage } from './dashboard.page';
+import { DashboardPage } from "./dashboard.page";
+import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 
-describe('DashboardPage', () => {
+describe("DashboardPage", () => {
   let component: DashboardPage;
   let fixture: ComponentFixture<DashboardPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DashboardPage ],
-      imports: [IonicModule.forRoot()]
+      declarations: [DashboardPage],
+      imports: [IonicModule.forRoot()],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
 
     fixture = TestBed.createComponent(DashboardPage);
@@ -18,7 +20,7 @@ describe('DashboardPage', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
