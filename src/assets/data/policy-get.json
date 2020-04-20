@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Life Super 20",
+    "policynumber": "432345678",
+    "status": "Inforce",
+    "details": [
+      { "label": "Sum Assured", "value": "HKD 5,900,000" },
+      { "label": "Surrender Value*", "value": "HKD 240,770" },
+      {
+        "label": "Modal Premium / Regular Contribution including Levy",
+        "value": "HKD 3,441"
+      }
+    ],
+    "isDue": "Premium of HKD 1,280.90 due in 3 days"
+  },
+  {
+    "name": "Sun Architect 20",
+    "policynumber": "948394064",
+    "status": "Inforce",
+    "details": [
+      { "label": "Contribution Amount", "value": "HKD 11,066" },
+      { "label": "Fund Balance*", "value": "HKD 10,539" },
+      { "label": "Surrender Value", "value": "HKD 7,337" },
+      {
+        "label": "Modal Premium / Regular Contribution including Levy",
+        "value": "HKD 3,441"
+      }
+    ]
+  },
+  {
+    "name": "Critical Medical Care Plan II",
+    "policynumber": "024624673",
+    "status": "Inforce",
+    "details": [
+      { "label": "Amount of Benefit", "value": "HKD 500,000" },
+      {
+        "label": "Modal Premium / Regular Contribution including Levy",
+        "value": "HKD 3,441"
+      }
+    ]
+  },
+  {
+    "name": "Sun Educator 5",
+    "policynumber": "658303053",
+    "status": "Inforce",
+    "details": [
+      { "label": "Amount of Benefit", "value": "HKD 25,000" },
+      { "label": "Cash Value*", "value": "HKD 2,046" },
+      { "label": "Surrender Value", "value": "HKD 2,225" },
+      {
+        "label": "Modal Premium / Regular Contribution including Levy",
+        "value": "HKD 3,441"
+      }
+    ]
+  }
+]

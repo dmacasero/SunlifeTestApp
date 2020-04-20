@@ -1,0 +1,60 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="app-color">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="light" size="large">
+        <ion-icon
+          slot="icon-only"
+          name="notifications-outline"
+          class="badge"
+        ></ion-icon>
+        <ion-badge color="danger">2</ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <div style="width: 100%; align-items: center;">
+    <br /><br />
+    <ion-avatar>
+      <img src="../../assets/user-avatar/user-avatar.png" />
+    </ion-avatar>
+    <p class="user-info user-info-text user-greeting ion-text-center">
+      {{ timePeriod }}
+    </p>
+    <h5 class="ion-text-center">Macasero, Dominique Kevin</h5>
+    <img src="../../assets/image/banner.PNG" class="banner" />
+    <ion-toolbar class="segment">
+      <ion-segment mode="md" [(ngModel)]="segmentDashboard">
+        <ion-segment-button value="ilas">
+          <ion-icon size="large" name="today-outline"></ion-icon>
+          <ion-label>Manage <br />ILAS Funds</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="claims">
+          <ion-icon size="large" name="document-outline"></ion-icon>
+          <ion-label>Claims</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="policy-serving">
+          <ion-icon size="large" name="thumbs-up-outline"></ion-icon>
+          <ion-label>Policy <br />Serving</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </div>
+
+  <div>
+    <div *ngIf="segmentDashboard=='ilas'">
+      <app-ilas-funds></app-ilas-funds>
+    </div>
+
+    <div *ngIf="segmentDashboard=='claims'">
+      <app-claims></app-claims>
+    </div>
+
+    <div *ngIf="segmentDashboard=='policy-serving'">
+      <app-policy-serving></app-policy-serving>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,45 @@
+:host {
+  .badge {
+    margin-inline-end: -10px;
+  }
+
+  ion-badge {
+    font-size: 10px;
+    font-weight: normal;
+  }
+
+  .banner {
+    margin-bottom: -110px;
+    width: 100%;
+  }
+
+  ion-segment-button {
+    font-size: 10px;
+    --indicator-color: none;
+    --color-checked: none;
+  }
+
+  ion-segment {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  ion-avatar {
+    margin: auto;
+    align-self: center;
+  }
+
+  ion-toolbar {
+    --background: transparent;
+  }
+}
+
+ion-toolbar {
+  .segment {
+    background-image: url("/assets/image/banner.PNG") no-repeat center/cover
+      fixed;
+    ion-label {
+      font-size: 5px;
+    }
+  }
+}
